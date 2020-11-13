@@ -1,4 +1,4 @@
-# Copyright (C) 2019 RevengeOS
+# Copyright (C) 2019 HyconOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 
 # Required packages
 PRODUCT_PACKAGES += \
-    com.revengeos.platform-res \
+    com.hycon.platform-res \
 
 PRODUCT_PACKAGES += \
     BluetoothExt \
@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
     Stk \
     Snap
 
-# RevengeOS packages
+# HyconOS packages
 PRODUCT_PACKAGES += \
     RetroMusicPlayer \
     RevengeOSCalculator \
@@ -35,7 +35,7 @@ PRODUCT_PACKAGES += \
     SimpleWeather
 
 # Updates
-ifeq ($(REVENGEOS_BUILDTYPE),OFFICIAL)
+ifeq ($(HYCON_BUILDTYPE),OFFICIAL)
 PRODUCT_PACKAGES += \
    Updates
 endif

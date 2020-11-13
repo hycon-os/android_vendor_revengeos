@@ -1,8 +1,8 @@
-// RevengeOS soong configs
+// Hycon soong configs
 
 bootstrap_go_package {
-    name: "soong-revengeos-generator",
-    pkgPath: "revengeos/soong/generator",
+    name: "soong-hycon-generator",
+    pkgPath: "hycon/soong/generator",
     deps: [
         "blueprint",
         "blueprint-pathtools",
@@ -17,7 +17,7 @@ bootstrap_go_package {
     pluginFor: ["soong_build"],
 }
 
-revengeos_generator {
+hycon_generator {
     name: "generated_kernel_includes",
 
     // The headers make command
